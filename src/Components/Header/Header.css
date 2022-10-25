@@ -1,0 +1,7 @@
+.Header{
+    margin-left: 1%;
+    margin-right: 1%;
+    color: rgb(204, 204, 204);
+    display: flex;
+    justify-content: space-between;
+}

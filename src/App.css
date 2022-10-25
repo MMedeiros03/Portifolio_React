@@ -1,0 +1,57 @@
+.Home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Img{
+    max-width: 50%;
+    background-color: black;
+    width: 100%;
+    height: 83vh;
+    border-radius: 5px;
+}
+
+.Intro{
+    margin-top: 10%;
+    margin-left: 5%;
+    max-width: 50%;
+    font-size: 40px;
+}
+
+.Intro_txt{
+    color: white;
+    font-size: 20px;
+}
+
+.Intro .btns{
+    margin-top: 5%;
+}
+
+.Intro 
+.btns 
+.btn_home{
+    margin-left: 35px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid rgb(129, 129, 129);
+    color: white;
+    outline: none;
+    transition: 0.5s linear;
+}
+.Intro 
+.btns
+.btn_home:hover{
+    transition: 0.5s linear;
+    border: 1.5px solid white;
+    box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.699);
+}
+
+
+.Img .Content_img{
+    background-color: black;
+    width: max-content;
+    height: max-content;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
