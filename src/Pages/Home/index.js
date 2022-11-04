@@ -22,26 +22,23 @@ const [user, setUser] = useState([]);
       {/* <SideBar /> */}
       <div className="Home">
           <div className="Intro">
-            {user.name}
-            <br></br>
+            <p>{user.name}</p>
             Junior Software Developer 
             <br></br>
+            
             <p className="Intro_txt">{user.bio}</p>
             <div className="btns">
               <Link to='/repositories'>
                 <button className="btn_home">Informations</button>
               </Link>
                 
-
-
+              <Link to='/contact'>
                 <button className="btn_home">Contact</button>
-
+              </Link>
             </div>
           </div>          
           <div className="Img">
-            <div className="Content_img">
-              <img src={user.avatar_url} />
-            </div>
+            <img  className='Content_Img' src={user.avatar_url} />
           </div>
       </div>
     </div>

@@ -1,0 +1,17 @@
+.links {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    left: 10px;
+    justify-content: space-between;
+}
+
+.Cards{
+    margin-top: 20px;
+    border: 2px solid rgba(37, 37, 37, 0.555);;
+    width: 60vw;
+    background: linear-gradient(to right,transparent 35%, rgb(0, 0, 0));
+}
+
+.ant-card-body{
+    padding-left: 10px;
+}

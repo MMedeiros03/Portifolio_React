@@ -1,4 +1,5 @@
 import Header from '../../Components/Header/Header';
+import Cards from '../../Components/Card';
 // import SideBar from "./Components/SideBar/SideBar";
 import React from "react";
 import { useState,useEffect } from "react";
@@ -28,18 +29,30 @@ const infoRepositoriesGitHub = async () => {
 
   return (
     <>
-      <Header />
+    <Header/>
 
+    <div className='Repository'>
         <div className='My_infos'>
-            <div>
-                <img className="Content_img" src={user.avatar_url} />
-            </div>
+            <img className="Content_img" src={user.avatar_url} />
+            <p>{user.name}</p>
+            <p className='login'>{user.login}</p>
+            <p className='bio'>{user.bio}</p>
         </div>
 
-        {/* <div className='My_Repositories'>
-            <div className='Card'>...</div>
-        </div> */}
-        {/* {repositories.map(e => (e.name))} */}
+        <div className='My_Repositories'>
+            {repositories.map(repository => {
+                return (
+                    <Cards
+                        name = {repository.name}
+                        description = {repository.description}
+                        link = {repository.html_url}
+                    />
+            )})}
+            
+        </div>
+        
+    </div>
+
 
     </>
   );

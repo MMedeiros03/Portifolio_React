@@ -1,11 +1,35 @@
-.My_infos{
+.Repository{
     display: flex;
+}
+
+.My_infos{
     background-color: rgb(0, 0, 0);
     width: 35%;
-    height: 84.5vh;
     background: linear-gradient(to left,transparent 1%, rgb(0, 0, 0));
 }
 
 .Content_img{
+    display: flex;
     border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin-left: 15%;
+    border-color: rgb(105, 105, 105);
+    border-width: 1px;
+    border-style: solid
+}
+
+p{
+    background-color: transparent;
+    color: rgb(226, 226, 226);
+    font-size: 25px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.login{
+    color: rgba(139, 139, 139, 0.795);
+}
+.bio{
+    font-size: 20px;
 }

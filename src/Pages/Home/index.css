@@ -1,6 +1,6 @@
 .Home{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .Img{
@@ -9,13 +9,23 @@
     width: 100%;
     height: 83vh;
     border-radius: 5px;
+    background: linear-gradient(to right,transparent 1%, rgb(0, 0, 0));
 }
-
+.Img .Content_Img
+{
+    margin-top: 35px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
 .Intro{
     margin-top: 10%;
     margin-left: 5%;
     max-width: 50%;
     font-size: 40px;
+    color: white;
+}
+.Intro p{
+    margin: 0;
 }
 
 .Intro_txt{
@@ -48,10 +58,3 @@
 }
 
 
-.Img .Content_img{
-    background-color: black;
-    width: max-content;
-    height: max-content;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
