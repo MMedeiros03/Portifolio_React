@@ -28,7 +28,7 @@ const [user, setUser] = useState([]);
             
             <p className="Intro_txt">{user.bio}</p>
             <div className="btns">
-              <Link to='/repositories'>
+              <Link to='/about'>
                 <button className="btn_home">Informations</button>
               </Link>
                 
