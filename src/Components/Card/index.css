@@ -3,15 +3,41 @@
     color: rgb(180, 180, 180);
     left: 10px;
     justify-content: space-between;
+    background-color: transparent !important;
 }
 
 .Cards{
+    justify-content: space-between;
     margin-top: 20px;
     border: 2px solid rgba(37, 37, 37, 0.555);;
     width: 60vw;
     background: linear-gradient(to right,transparent 35%, rgb(0, 0, 0));
+    background-color: transparent !important;
 }
 
 .ant-card-body{
+    display: flex;
     padding-left: 10px;
+    justify-content: space-between;
+    background-color: transparent !important;
+}
+
+a{
+    background-color: "transparent"
+}
+
+.img_language{
+    width: 150px;
+    height: 100px;
+    background-color: transparent !important;
+}
+
+.ant-card-meta-detail{
+    background-color: transparent !important;
+}
+.ant-card-meta-title{
+    background-color: transparent !important;
+}
+.ant-card-meta-description{
+    background-color: transparent !important;
 }

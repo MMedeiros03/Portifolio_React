@@ -27,6 +27,8 @@ const infoRepositoriesGitHub = async () => {
     setRepositories(json);
 }
 
+console.log(repositories);
+
   return (
     <>
     <Header/>
@@ -42,11 +44,14 @@ const infoRepositoriesGitHub = async () => {
         <div className='My_Repositories'>
             {repositories.map(repository => {
                 return (
+                <>
                     <Cards
                         name = {repository.name}
                         description = {repository.description}
                         link = {repository.html_url}
+                        language = {repository.language}
                     />
+                </>  
             )})}
             
         </div>
