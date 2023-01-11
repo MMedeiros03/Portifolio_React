@@ -10,3 +10,7 @@
     text-decoration: none;
     color: whitesmoke;
 }
+
+.ativaModal{
+    rotate: 90deg;
+}

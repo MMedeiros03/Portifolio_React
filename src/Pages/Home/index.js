@@ -1,9 +1,10 @@
 import Header from '../../Components/Header/Header';
 import { Link } from "react-router-dom";
-// import SideBar from "./Components/SideBar/SideBar";
+import { Modal } from 'antd';
 import React from "react";
 import { useState,useEffect } from "react";
 import './index.css';
+// import 'antd/dist/antd.css';
 function Home() {
 
 const [user, setUser] = useState([]);
@@ -16,10 +17,26 @@ const [user, setUser] = useState([]);
       const json = await data.json();
       setUser(json);
   }
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="App">
       <Header />
-      {/* <SideBar /> */}
+      <Modal open={isModalOpen} onCancel={handleCancel} closable={false} footer={null} className="ModalHome">
+        <Link to='/about'>Informations</Link>
+        <Link to='/contact'>Contact</Link>
+        <Link to='/repositories'>Projects</Link>
+      </Modal>
       <div className="Home">
           <div className="Intro">
             <p>{user.name}</p>

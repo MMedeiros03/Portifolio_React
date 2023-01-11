@@ -47,6 +47,7 @@
     border: 1px solid rgb(129, 129, 129);
     color: white;
     outline: none;
+    background-color: transparent;
     transition: 0.5s linear;
 }
 .Intro 
@@ -57,4 +58,21 @@
     box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.699);
 }
 
+.ModalHome{
+    position: relative;
+    width: 30vw !important;
+    height: 80vh;
+    left: -34%;
+}
+.ModalHome .ant-modal-content{
+    background-color: rgb(27, 27, 27);
+    height: 80vh;
+}
 
+
+.linkPage{
+    color: white;
+    margin-top: 5%;
+    display: block;
+    font-size: 40px;
+}
