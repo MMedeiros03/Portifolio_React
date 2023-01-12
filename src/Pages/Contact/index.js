@@ -1,11 +1,11 @@
-import Header from '../../Components/Header/Header';
 import React from "react";
+import Header from "../../Components/Header/Header";
 import './index.css';
 function Contact() {
 
   return (
     <>
-        <Header/>
+        <Header />
 
         <div className='Contact'>
             <div className='Contact_Infos'>

@@ -1,6 +1,6 @@
-import Header from '../../Components/Header/Header';
+
 import Cards from '../../Components/Card';
-// import SideBar from "./Components/SideBar/SideBar";
+import Header from '../../Components/Header/Header';
 import React from "react";
 import { useState,useEffect } from "react";
 import './index.css';
@@ -31,7 +31,7 @@ console.log(repositories);
 
   return (
     <>
-    <Header/>
+    <Header />
 
     <div className='Repository'>
         <div className='My_infos'>

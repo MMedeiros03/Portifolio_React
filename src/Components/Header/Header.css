@@ -14,3 +14,10 @@
 .ativaModal{
     rotate: 90deg;
 }
+
+.btnModal{
+    background-color: transparent;
+    border: none;
+    font-size: 50px ;
+    color: whitesmoke;
+}
