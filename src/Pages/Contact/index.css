@@ -6,10 +6,11 @@
 .Contact_Infos{
     justify-content: center;
     margin-left: 2%;
-    max-width: 45%;
     color: white;
     border: 1px solid #8b8b8b25;
     height: 80vh;
+    max-width: 45%;
+    width: 80%;
 }
 
 .teste{
@@ -24,20 +25,16 @@
 .Social_Medias{
     border: 1px solid #8b8b8b25;
     margin-right: 1%;
-    max-width: 600px;
+    max-width: 45%;
+    width: 80%;
 }
 
-.icons{
+.Icons{
     text-align: center;
     color: white;
-    margin-top: 30% ;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 10%;
 }
 
-.Contact_Infos .icons{
-    width: 90vw;
-}
 
 .fa {
   padding: 20px;

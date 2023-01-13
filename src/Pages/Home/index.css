@@ -10,13 +10,11 @@
     height: 83vh;
     border-radius: 5px;
     background: linear-gradient(to right,transparent 1%, rgb(0, 0, 0));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.Img .Content_Img
-{
-    margin-top: 35px;
-    margin-left: 100px;
-    border-radius: 5px;
-}
+
 .Intro{
     margin-top: 10%;
     margin-left: 5%;

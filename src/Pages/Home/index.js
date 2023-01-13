@@ -3,6 +3,8 @@ import React from "react";
 import { useState,useEffect } from "react";
 import './index.css';
 import Header from "../../Components/Header/Header";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import myphoto from '../../Images/myphoto.jpeg';
 // import 'antd/dist/antd.css';
 function Home() {
 
@@ -38,7 +40,11 @@ const [user, setUser] = useState([]);
             </div>
           </div>          
           <div className="Img">
-            {/* <img  className='Content_Img' src={user.avatar_url} /> */}
+          <LazyLoadImage className="my_img"
+            alt={"my_img"}
+            height={600}
+            src={myphoto} // use normal <img> attributes as props
+            width={600} />
           </div>
       </div>
     </div>
