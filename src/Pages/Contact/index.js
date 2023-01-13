@@ -5,7 +5,7 @@ function Contact() {
 
   return (
     <>
-        <Header />
+        <Header namePage='Contact'/>
 
         <div className='Contact'>
             <div className='Contact_Infos'>

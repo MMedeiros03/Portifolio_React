@@ -31,7 +31,7 @@ console.log(repositories);
 
   return (
     <>
-    <Header />
+    <Header namePage='Projects' />
 
     <div className='Repository'>
         <div className='My_infos'>

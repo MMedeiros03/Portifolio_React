@@ -16,7 +16,7 @@ function About() {
   };
   return (
     <>
-      <Header />
+      <Header namePage='About' />
       <div className="About">   
         <div className='Carousel'>
           <div className='teste'>

@@ -14,6 +14,12 @@
     justify-content: space-around;
     align-items: center;
 }
+.my_img{
+    width: 70%;
+    height: 85%;
+    border-radius: 5px;
+    margin-left: 3%;
+}
 
 .Intro{
     margin-top: 10%;

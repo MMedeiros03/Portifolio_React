@@ -21,7 +21,7 @@ const [user, setUser] = useState([]);
 
   return (
     <div className="App">
-      <Header />
+      <Header namePage='Home'/>
       <div className="Home">
           <div className="Intro">
             <p>{user.name}</p>
@@ -40,11 +40,10 @@ const [user, setUser] = useState([]);
             </div>
           </div>          
           <div className="Img">
-          <LazyLoadImage className="my_img"
+            <LazyLoadImage className="my_img"
             alt={"my_img"}
-            height={600}
             src={myphoto} // use normal <img> attributes as props
-            width={600} />
+            />
           </div>
       </div>
     </div>
