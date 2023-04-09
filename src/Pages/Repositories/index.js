@@ -41,19 +41,8 @@ console.log(repositories);
             <p className='bio'>{user.bio}</p>
         </div>
 
-        <div className='My_Repositories'>
-            {repositories.map(repository => {
-                return (
-                <>
-                    <Cards
-                        name = {repository.name}
-                        description = {repository.description}
-                        link = {repository.html_url}
-                        language = {repository.language}
-                    />
-                </>  
-            )})}
-            
+        <div className='My_Repositories' style={{width:"50%"}}>
+            <Cards listRepositoryes={repositories}/>
         </div>
         
     </div>

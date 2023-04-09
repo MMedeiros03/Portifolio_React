@@ -1,10 +1,11 @@
 .Repository{
     display: flex;
+    max-width: 100%;
 }
 
 .My_infos{
     background-color: rgb(0, 0, 0);
-    width: 35%;
+    width: 50%;
     background: linear-gradient(to left,transparent 1%, rgb(0, 0, 0));
 }
 
