@@ -24,33 +24,33 @@ const Cards = ({listRepositoryes}) => {
       }
     }
     
-
-    const contentStyle = {
-      width: "100%",
-      height: '500px',
-      color: '#fff',
-      lineHeight: '500px',
-      textAlign: 'center',
-      background: 'black',
-    };
-
-
   return (
-    <Carousel >
+    <Carousel autoplay>
       {listRepositoryes.map((repository) => (
-        <div style={{width:"80%", height:"80%"}}>
-          <div style={contentStyle}>
-            <img 
-              style={{width:250, height: 100}}
-              src={decideStack(repository.language)}
-              />
-            <h1>
-              {repository?.name}
-            </h1>
-            <h2 style={{color: "#fff"}}> 
-            {repository?.description}
-            </h2>
-          </div>
+        <div style={{maxWidth:"80%", maxHeight:"80%", backgroundColor: "blue"}} >
+          <a href={repository?.html_url}>
+            <div style={{width: "100%", 
+              height:"500px", 
+              display: "flex", 
+              flexDirection: "column", 
+              alignItems: "center", 
+              justifyContent: "center",
+              textDecoration: "none",
+              color: "#ffff",
+              backgroundColor: "rgba(0, 0, 0, 0.24)"
+              }}>
+              <img 
+                style={{width:250, height: 100}}
+                src={decideStack(repository.language)}
+                />
+              <h1>
+                {repository?.name}
+              </h1>
+              <h2 style={{color: "#ffff"}}> 
+              {repository?.description}
+              </h2>
+            </div>
+          </a>
         </div>
       ))}
     
