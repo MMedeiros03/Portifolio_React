@@ -22,12 +22,10 @@ const infoUserGitHub = async () => {
 }
 
 const infoRepositoriesGitHub = async () => {
-    const data  = await fetch('https://api.github.com/users/MMedeiros03/repos');
+    const data  = await fetch('https://api.github.com/users/MMedeiros03/starred');
     const json = await data.json();
     setRepositories(json);
 }
-
-console.log(repositories);
 
   return (
     <>
@@ -35,19 +33,19 @@ console.log(repositories);
 
     <div className='Repository'>
         <div className='My_infos'>
-            <img className="Content_img" src={user.avatar_url} />
-            <p>{user.name}</p>
-            <p className='login'>{user.login}</p>
-            <p className='bio'>{user.bio}</p>
+            <div style={{display: "flex", alignItems: "center"}}> 
+                <img className="Content_img" src={user.avatar_url} />
+                <div style={{flexDirection: 'column', display: "flex"}}>
+                    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MMedeiros03&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+                    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MMedeiros03&layout=compact&langs_count=7&theme=dark"/>
+                </div>
+            </div>
         </div>
 
-        <div className='My_Repositories' style={{width:"50%"}}>
+        <div className='My_Repositories' style={{width:"50%", backgroundColor: "transparent"}}>
             <Cards listRepositoryes={repositories}/>
-        </div>
-        
+        </div> 
     </div>
-
-
     </>
   );
 }

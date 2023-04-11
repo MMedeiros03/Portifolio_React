@@ -24,19 +24,21 @@ const [user, setUser] = useState([]);
       <Header namePage='Home'/>
       <div className="Home">
           <div className="Intro">
-            <p>{user.name}</p>
-            Junior Software Developer
-            <br></br>
-            
-            <p className="Intro_txt">{user.bio}</p>
-            <div className="btns">
-              <Link to='/about'>
-                <button className="btn_home">Informations</button>
-              </Link>
-                
-              <Link to='/contact'>
-                <button className="btn_home">Contact</button>
-              </Link>
+            <div>
+              <p>{user.name}</p>
+              Junior Software Developer
+              <br></br>
+              
+              <p className="Intro_txt">{user.bio}</p>
+              <div className="btns">
+                <Link to='/about'>
+                  <button className="btn_home">Informations</button>
+                </Link>
+                  
+                <Link to='/contact'>
+                  <button className="btn_home">Contact</button>
+                </Link>
+              </div>
             </div>
           </div>          
           <div className="Img">

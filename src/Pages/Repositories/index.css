@@ -1,12 +1,18 @@
 .Repository{
     display: flex;
     max-width: 100%;
+    background-color: black;
+    height: 70%;
+    background: linear-gradient(to left,transparent 45%, rgb(0, 0, 0));
 }
 
 .My_infos{
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     width: 50%;
-    background: linear-gradient(to left,transparent 1%, rgb(0, 0, 0));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .Content_img{
@@ -14,7 +20,8 @@
     border-radius: 100%;
     width: 250px;
     height: 250px;
-    margin-left: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-color: rgb(105, 105, 105);
     border-width: 1px;
     border-style: solid

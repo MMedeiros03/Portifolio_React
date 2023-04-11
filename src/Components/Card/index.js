@@ -19,6 +19,8 @@ const Cards = ({listRepositoryes}) => {
           return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg";
         case "CSS":
           return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg";
+        case "PHP":
+            return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg";
         default:
           return "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg";
       }
