@@ -2,8 +2,14 @@
     display: flex;
     max-width: 100%;
     background-color: black;
-    height: 70%;
+    max-height: 90% !important;
     background: linear-gradient(to left,transparent 45%, rgb(0, 0, 0));
+}
+
+.My_Repositories{
+    width: 50%;
+    background-color: transparent;
+    height: 60vh;
 }
 
 .My_infos{
@@ -13,6 +19,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height: 70vh;
 }
 
 .Content_img{
