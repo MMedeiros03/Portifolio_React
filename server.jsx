@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
-import express from "express";
+const express = require("express");
 
 const { resolve } = require("path");
 
