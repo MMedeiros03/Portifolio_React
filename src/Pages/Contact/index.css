@@ -2,13 +2,19 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    background-image: linear-gradient(to left,
+
+    rgb(0, 0, 0) 0%,
+
+    rgb(27, 27, 27) 65%,
+
+    rgba(29, 29, 29, 0.452)100%);
 }
 
 .Contact_Infos{
     justify-content: center;
     margin-left: 2%;
     color: white;
-    border: 1px solid #8b8b8b25;
     height: 80vh;
     max-width: 50%;
     width: 100%;

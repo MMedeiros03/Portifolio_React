@@ -1,6 +1,13 @@
 .About{
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(to left,
+
+    rgb(0, 0, 0) 0%,
+
+    rgb(27, 27, 27) 65%,
+
+    rgba(29, 29, 29, 0.452)100%);
 }
 
 .Carousel{

@@ -39,26 +39,30 @@ function Contact() {
             <div className="Icons">
               <h1>My Social Medias</h1>
               <a
+                target="_blank"
                 href="https://www.linkedin.com/in/matheus-medeiros-3975b6216"
-                className="fa fa-linkedin"
+                className="fa fa-linkedin" rel="noreferrer"
               />
               <a
+                target="_blank"
                 href="https://www.instagram.com/m_medeiross03/"
-                className="fa fa-instagram"
+                className="fa fa-instagram" rel="noreferrer"
               />
               <a
+                target="_blank"
                 href="mailto:matheusmedeiros2003@gmail.com"
-                className="fa fa-google"
+                className="fa fa-google" rel="noreferrer"
               />
               <a
+                target="_blank"
                 href="https://wa.me/5547996065225"
-                className="fa fa-whatsapp"
+                className="fa fa-whatsapp" rel="noreferrer"
               />
             </div>
           </div>
         </div>
 
-        <div className="FormContact" style={{ width: "100%", marginLeft: 5 }}>
+        <Col className="FormContact" style={{ width: "100%", marginLeft: 10 }}>
           <Form
             form={form}
             name="RoleForm"
@@ -68,11 +72,10 @@ function Contact() {
             disabled={loading}
             style={{
               height: "100%",
-              display: "flex",
               alignItems: "center"
             }}
           >
-            <div style={{ maxWidth: "40%", width: "100%" }}>
+            <Col>
               <Col span={20}>
                 <Form.Item
                   label="Name"
@@ -120,19 +123,6 @@ function Contact() {
                 </Form.Item>
               </Col>
 
-              <Col span={20}>
-                <Button
-                  loading={loading}
-                  htmlType="submit"
-                  className="FormFields"
-                  style={{ width: "35%" }}
-                >
-                  Send
-                </Button>
-              </Col>
-            </div>
-
-            <div style={{ maxWidth: "60%", width: "100%" }}>
               <Col span={20} style={{ color: "white" }}>
                 <Form.Item
                   label="Message"
@@ -155,9 +145,19 @@ function Contact() {
                   />
                 </Form.Item>
               </Col>
-            </div>
+            </Col>   
+            <Col span={20} style={{display: "flex", justifyContent: "flex-end" }}>
+                <Button
+                  loading={loading}
+                  htmlType="submit"
+                  className="FormFields"
+                  style={{ width: "35%" }}
+                >
+                  Send
+                </Button>
+              </Col>         
           </Form>
-        </div>
+        </Col>
       </div>
     </>
   );
