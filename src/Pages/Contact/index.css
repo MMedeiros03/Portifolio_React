@@ -1,6 +1,7 @@
 .Contact{
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 .Contact_Infos{
@@ -9,8 +10,8 @@
     color: white;
     border: 1px solid #8b8b8b25;
     height: 80vh;
-    max-width: 45%;
-    width: 80%;
+    max-width: 50%;
+    width: 100%;
 }
 
 .teste{
@@ -69,3 +70,21 @@
     background: #292929;
     color: white;
 }  
+
+
+.FormFields{
+    background-color: transparent !important;
+    color: white;
+    width: 100%;
+}
+
+.ant-col .ant-form-item-label label{
+    font-family:  Times, serif;
+    font-size: 18px;
+    color: white;
+}
+
+.ant-form-item-explain-error{
+    font-size: 15px;
+    font-family:  Times, serif;
+}

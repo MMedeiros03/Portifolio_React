@@ -47,6 +47,11 @@ function Cards({ listRepositoryes }) {
     >
       {listRepositoryes?.map((repository) => (
         <Col
+          xs={12}
+          sm={12}
+          md={8}
+          lg={4}
+          xl={4}
           className="Card"
           style={{
             height: 300,

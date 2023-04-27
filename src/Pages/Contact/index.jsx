@@ -1,10 +1,23 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React from "react";
+import React, { useState } from "react";
+import { Button, Col, Form, Input } from "antd";
 import Header from "../../Components/Header/Header";
 import "./index.css";
 
+import { SendEmail } from "../../Services/SendEmail";
+
 function Contact() {
+  const [form] = Form.useForm();
+  const { TextArea } = Input;
+  const [loading, setLoading] = useState(false);
+
+  const onFinish = async (values) => {
+    await SendEmail(values);
+    form.resetFields();
+    setLoading(false);
+  };
+
   return (
     <>
       <Header namePage="Contact" />
@@ -12,7 +25,7 @@ function Contact() {
       <div className="Contact">
         <div className="Contact_Infos">
           <div className="teste">
-            <h1 className="content_contact">Get in touch</h1>
+            <h1 className="content_contact">Contacts</h1>
             <br />
             <h2 className="content_contact">
               Email: matheusmedeiros2003@gmail.com
@@ -43,6 +56,107 @@ function Contact() {
               />
             </div>
           </div>
+        </div>
+
+        <div className="FormContact" style={{ width: "100%", marginLeft: 5 }}>
+          <Form
+            form={form}
+            name="RoleForm"
+            layout="vertical"
+            onFinish={onFinish}
+            autoComplete="off"
+            disabled={loading}
+            style={{
+              height: "100%",
+              display: "flex",
+              alignItems: "center"
+            }}
+          >
+            <div style={{ maxWidth: "40%", width: "100%" }}>
+              <Col span={20}>
+                <Form.Item
+                  label="Name"
+                  name="name"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Campo obrigatório!"
+                    }
+                  ]}
+                >
+                  <Input className="FormFields" />
+                </Form.Item>
+              </Col>
+              <Col span={20}>
+                <Form.Item
+                  label="Email"
+                  name="email"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Por favor, informe um endereço de email"
+                    },
+                    {
+                      type: "email",
+                      message: "Por favor, informe um endereço de email válido"
+                    }
+                  ]}
+                >
+                  <Input className="FormFields" />
+                </Form.Item>
+              </Col>
+              <Col span={20}>
+                <Form.Item
+                  label="Subject"
+                  name="subject"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Campo obrigatório!"
+                    }
+                  ]}
+                >
+                  <Input className="FormFields" />
+                </Form.Item>
+              </Col>
+
+              <Col span={20}>
+                <Button
+                  loading={loading}
+                  htmlType="submit"
+                  className="FormFields"
+                  style={{ width: "35%" }}
+                >
+                  Send
+                </Button>
+              </Col>
+            </div>
+
+            <div style={{ maxWidth: "60%", width: "100%" }}>
+              <Col span={20} style={{ color: "white" }}>
+                <Form.Item
+                  label="Message"
+                  name="message"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Campo obrigatório!"
+                    }
+                  ]}
+                >
+                  <TextArea
+                    style={{
+                      height: 120,
+                      resize: "none",
+                      backgroundColor: "transparent",
+                      color: "white"
+                    }}
+                    rows={6}
+                  />
+                </Form.Item>
+              </Col>
+            </div>
+          </Form>
         </div>
       </div>
     </>
