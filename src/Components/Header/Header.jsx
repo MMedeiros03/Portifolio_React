@@ -12,7 +12,8 @@ import { useState } from "react";
 import {
   MdPermContactCalendar,
   MdOutlineHome,
-  MdInfoOutline
+  MdInfoOutline,
+  MdOutlineDragHandle
 } from "react-icons/md";
 
 import { ProjectOutlined } from "@ant-design/icons";
@@ -43,7 +44,7 @@ function Header(props) {
   return (
     <div className="Header">
       <button className="btnModal" onClick={showModal} id="ativaModal">
-        ==
+        <MdOutlineDragHandle />
       </button>
       <p
         className="contentHeader"

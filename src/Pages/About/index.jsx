@@ -2,7 +2,11 @@
 import React, { useState } from "react";
 import { Carousel, Image, Tooltip } from "antd";
 import "./index.css";
-import { MdGTranslate } from "react-icons/md";
+import {
+  MdGTranslate,
+  MdKeyboardDoubleArrowRight,
+  MdKeyboardDoubleArrowLeft
+} from "react-icons/md";
 import {
   mdiLanguageJava,
   mdiLanguagePython,
@@ -50,7 +54,8 @@ function About() {
           style={{
             display: "flex",
             flexDirection: "column",
-            marginLeft: 90
+            marginLeft: 35,
+            maxWidth: "46%"
           }}
         >
           <div style={{ marginBottom: 20 }}>
@@ -131,7 +136,7 @@ function About() {
           </div>
         </div>
         <div className="Carousel">
-          <Carousel>
+          <Carousel autoplay autoplaySpeed={5000}>
             <div style={contentStyle}>
               <span className="TitleAbout" style={{ color: "white" }}>
                 {translate ? "Tecnlogias" : "Stacks"}
@@ -157,7 +162,7 @@ function About() {
                   </span>
                 )}
 
-                <span style={{ color: "white", marginRight: 5 }}>Java</span>
+                <span style={{ color: "white", marginRight: 15 }}>Java</span>
               </div>
 
               <div
@@ -180,7 +185,7 @@ function About() {
                   </span>
                 )}
 
-                <span style={{ color: "white", marginRight: 5 }}>Python</span>
+                <span style={{ color: "white", marginRight: 15 }}>Python</span>
               </div>
 
               <div
@@ -203,7 +208,7 @@ function About() {
                   </span>
                 )}
 
-                <span style={{ color: "white", marginRight: 5 }}>
+                <span style={{ color: "white", marginRight: 15 }}>
                   JavaScript
                 </span>
               </div>
@@ -228,7 +233,7 @@ function About() {
                   </span>
                 )}
 
-                <span style={{ color: "white", marginRight: 5 }}>PHP</span>
+                <span style={{ color: "white", marginRight: 15 }}>PHP</span>
               </div>
 
               <div
@@ -250,7 +255,7 @@ function About() {
                     language I most want to master and work with.
                   </span>
                 )}
-                <span style={{ color: "white", marginRight: 5 }}>Csharp</span>
+                <span style={{ color: "white", marginRight: 15 }}>Csharp</span>
               </div>
 
               <div
@@ -273,7 +278,7 @@ function About() {
                   </span>
                 )}
 
-                <span style={{ color: "white", marginRight: 5 }}>React</span>
+                <span style={{ color: "white", marginRight: 15 }}>React</span>
               </div>
             </div>
             <div>
@@ -291,7 +296,7 @@ function About() {
                       }}
                       onClick={prevImage}
                     >
-                      {"<<"}
+                      <MdKeyboardDoubleArrowLeft size={30} />
                     </button>
                     <Image
                       width={673}
@@ -307,7 +312,7 @@ function About() {
                       }}
                       onClick={nextImage}
                     >
-                      {">>"}
+                      <MdKeyboardDoubleArrowRight size={30} />
                     </button>
                   </div>
                 </div>

@@ -72,14 +72,12 @@
 }
 
 .ModalHome{
-    position: relative;
-    width: 30vw !important;
-    height: 80vh;
-    left: -34%;
+    position: fixed;
+    width: 20vw !important;
+    margin-left: 90px;
 }
 .ModalHome .ant-modal-content{
     background-color: rgb(27, 27, 27);
-    height: 80vh;
 }
 
 

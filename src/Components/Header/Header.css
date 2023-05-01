@@ -12,10 +12,11 @@
 }
 
 .ativaModal{
-    rotate: 90deg;
+    
 }
 
 .btnModal{
+    margin-top: 20px;
     background-color: transparent;
     border: none;
     font-size: 50px ;
@@ -25,9 +26,7 @@
 .ant-modal-content{
     display: block;
 }
-.ant-modal-body{
-    margin-top: 25%;
-}
+
 
 .contentHeader{
     margin-top: 2% !important;

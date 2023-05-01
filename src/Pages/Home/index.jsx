@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Header from "../../Components/Header/Header";
-import myphoto from "../../Images/myphoto.jpeg";
+import myphoto from "../../Images/myphoto.png";
 
 function Home() {
   const [user, setUser] = useState([]);
