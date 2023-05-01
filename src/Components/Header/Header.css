@@ -32,3 +32,8 @@
 .contentHeader{
     margin-top: 2% !important;
 }
+
+.itensModal{
+    display: flex;
+    align-items: center;
+}

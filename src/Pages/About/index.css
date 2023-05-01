@@ -1,5 +1,6 @@
 .About{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(to left,
 
@@ -14,4 +15,13 @@
     max-width: 45%;
     width: 80%;
     height: 100%;
+}
+
+
+.slick-slide.slick-active div .TitleAbout{
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    color: white;
+    font-size: 35px;
 }

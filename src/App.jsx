@@ -25,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/informations" element={<About />} />
         </Routes>
       </Router>
     </ConfigProvider>

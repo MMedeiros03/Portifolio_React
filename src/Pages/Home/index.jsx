@@ -30,7 +30,7 @@ function Home() {
             <br />
             <p className="Intro_txt">{user.bio}</p>
             <div className="btns">
-              <Link to="/about">
+              <Link to="/informations">
                 <button className="btn_home">Informations</button>
               </Link>
 
